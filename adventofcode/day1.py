@@ -6,8 +6,6 @@ def isNum(x):
     else: 
         return False 
     
-
-
 with open('day1.txt', 'r') as file:
     total = 0 
     for line in file: 
