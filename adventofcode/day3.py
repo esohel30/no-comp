@@ -72,3 +72,4 @@ for i in range(len(map)):
          
 print(total)
 print(total)
+print(total)
