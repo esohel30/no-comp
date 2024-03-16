@@ -70,5 +70,4 @@ for i in range(len(map)):
         else: 
             j += 1 
          
-print(total)
-print(tot
+print(total) 
