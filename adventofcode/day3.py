@@ -71,7 +71,4 @@ for i in range(len(map)):
             j += 1 
          
 print(total)
-print(total)
-print(total)
-print(total)
-print(total)
+print(tot
