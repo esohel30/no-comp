@@ -27,3 +27,4 @@ times = 46689866
 records =  358105418071080
 
 print(beat_record(times, records))
+
