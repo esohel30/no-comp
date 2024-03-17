@@ -2,6 +2,7 @@ with open('day5.txt', 'r') as file:
     file_iterator = iter(file)
     line = next(file_iterator)
     seeds = [int(x) for x in line.split()[1:]]
+
     
     line = next(file_iterator)
     line = next(file_iterator)
@@ -61,17 +62,6 @@ with open('day5.txt', 'r') as file:
         humidity_to_location.append([int(x) for x in line.split()])
         j += 1
 
-# seed to soil 
-# soil to fertilizer 
-# fertilizer to water 
-# water to light 
-# light to temperature 
-# temperature to humidity 
-# humidity to location 
-        
-
-seed = 2637529854
-
 def transformation(original, matrix): 
     for row in matrix: 
         lower = row[1]
@@ -94,36 +84,7 @@ def journey(seed):
     location = transformation(humidity, humidity_to_location)
     return location 
 
-lowest = journey(seed)
+print(journey(72))
 
-for i in seeds: 
-    lowest = min(journey(i), lowest)
 
-#print(lowest)
     
-# Part two 
-    
-def splitter(original, x, y):
-    for i in range(len(original)):
-        if i % 2 == 0: 
-            x.append(original[i])
-        else: 
-            y.append(original[i])
-
-x = []
-y = []
-splitter(seeds, x, y)
-
-
-new_seeds = []
-
-lowest = journey(seed)
-
-for i in range(len(x)):
-    for j in range(y[i]):
-        lowest = min(journey(x[i] + j), lowest) 
-             
-print(lowest)
-
-
-
