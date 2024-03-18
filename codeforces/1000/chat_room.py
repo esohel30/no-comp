@@ -15,7 +15,18 @@ def solve(s):
                                             
     return "NO"
 
-print(solve(s))
+# What if given a much longer word to check. 
 
+def solve_recursively(fast, slow, target, given): 
+    if slow == len(target): 
+        return "YES" 
+    if fast >= len(given):
+        return "NO"
+    else: 
+        if given[fast] == target[slow]:
+            return solve_recursively(fast + 1, slow + 1, target, given)
+        else: 
+            return solve_recursively(fast + 1, slow, target, given)
 
+print(solve_recursively(0,0,"hello", s))
 
