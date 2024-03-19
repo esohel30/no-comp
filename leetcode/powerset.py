@@ -16,7 +16,6 @@ def power_set(nums, index, temp):
     temp.pop() # why pop ? 
 
 
-power_set(nums, 0, [])
-print(storage)
-
+# immutable objects in python are pass-by-value 
+# mutable objects in python are pass-by-refrence 
 
