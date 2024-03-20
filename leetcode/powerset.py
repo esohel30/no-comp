@@ -17,3 +17,9 @@ def power_set(nums, index, temp):
 power_set(nums, 0, [])
 print(storage)
 
+
+
+for i in range(1, 41):
+    temp = "*" * i 
+    print(temp)
+
