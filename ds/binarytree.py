@@ -19,6 +19,7 @@ B.left  = D
 B.right = E
 C.right = F 
 
+# dfs iterative using manual stack 
 def depth_first_values(root):
     if root == None:
         return []
@@ -37,3 +38,16 @@ def depth_first_values(root):
     return res 
 
 print(depth_first_values(A))
+
+# dfs recursive using recursive stack 
+
+def depth_first_recursive(root, values = []): 
+
+    if root: 
+        values.append(root.val)
+        depth_first_recursive(root.left, values)
+        depth_first_recursive(root.right, values)
+
+    return values
+
+print(depth_first_recursive(A))
