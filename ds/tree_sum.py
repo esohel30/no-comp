@@ -38,3 +38,13 @@ def tree_sum(root): # bfs iterative
 
 print(tree_sum(a))
 
+
+def tree_sum1(root): 
+    if root == None: 
+        return 0
+    
+    return root.val + tree_sum(root.left) + tree_sum(root.right)
+
+print(tree_sum1(a))
+
+
