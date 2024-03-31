@@ -20,14 +20,20 @@ B.right = E
 C.right = F 
 
 def depth_first_values(root):
+    if root == None:
+        return []
+    
+    res = []
     stack = [root]
 
     while stack: 
         current = stack.pop()
-        print(current.val)
+        res.append(current.val)
         if current.right: 
             stack.append(current.right)
         if current.left:
             stack.append(current.left)
 
-depth_first_values(A)
+    return res 
+
+print(depth_first_values(A))
