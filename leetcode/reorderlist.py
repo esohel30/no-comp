@@ -19,12 +19,14 @@ while fast and fast.next: # the second next might be on null: careful.
 
 slow = slow.next 
 
-while slow: 
-    print(slow.val)
-    slow = slow.next
-
 # the first one always gets more. Well we do move it one afterwards.
     
 
+arr = [x for x in range(1, 11)]
+slow, fast = 0, 1 
+
+
+
+print(slow)
 
 

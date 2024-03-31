@@ -1,5 +1,6 @@
 s = input()
 
+# trivial solution 
 def solve(s): 
     for i in range(len(s)): 
         if s[i] == 'h':
@@ -15,7 +16,7 @@ def solve(s):
                                             
     return "NO"
 
-# What if given a much longer word to check. 
+# optimal solution 
 
 def solve_recursively(fast, slow, target, given): 
     if slow == len(target): 
@@ -29,4 +30,6 @@ def solve_recursively(fast, slow, target, given):
             return solve_recursively(fast + 1, slow, target, given)
 
 print(solve_recursively(0,0,"hello", s))
+
+
 

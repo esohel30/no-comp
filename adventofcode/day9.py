@@ -34,12 +34,15 @@ def find_history(nums):
     temp = append_to_end(nums)
     return temp[0][-1]
 
-def sum_history(list1): 
+def solve_puzzle(list1): 
     total = 0
     for i in list1: 
         x = find_history(i)
         total += x 
     return total 
 
-print(sum_history(hist))
+# print(solve_puzzle(hist))
+# part 2 
+
+    
 
