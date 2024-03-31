@@ -51,4 +51,21 @@ def bfs(root):
 print(bfs(a))
 
 
+def tree_includes(root, target):
+    if root == None: return False 
+
+    queue = [root]
+    while queue: 
+        current = queue.pop()
+        if current.val == target: return True 
+        if current.left:
+            queue.insert(0, current.left)
+        if current.right: 
+            queue.insert(0, current.right)
+
+    return False 
+
+print(tree_includes(a, 'j'))
+
+
 
