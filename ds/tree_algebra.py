@@ -5,57 +5,45 @@ class Node:
         self.right = None 
 
 
-a = Node('-')
+a = Node('*')
 b = Node('/')
-c = Node('+')
+c = Node(8)
 d = Node('*')
 e = Node('+')
-f = Node('*')
-g = Node(6)
+f = Node('+')
+g = Node('-')
 h = Node('+')
-i = Node(3)
-j = Node('-')
+i = Node('-')
+j = Node(5)
 k = Node(2)
-l = Node(3)
-m = Node('-')
-n = Node(3)
-o = Node(1)
-p = Node(9)
-q = Node(5)
+l = Node(2)
+m = Node(1)
+n = Node(2)
+o = Node(9)
+p = Node('-')
+q = Node(1)
 r = Node(7)
-s = Node(4)
-
-#                 a
-#           /          \ 
-#         b            c
-#       /   \         /  \
-#     d      e       f    g  
-#    / \    / \      /\
-#   h   i  j   k    l  m 
-#  /\     /\           /\ 
-# n o     p q         r s 
+s = Node(2)
 
 
 a.left = b 
 a.right = c 
 b.left = d 
 b.right = e 
-c.left = f 
-c.right = g
-d.left = h 
-d.right = i 
-e.left = j 
-e.right = k 
-f.left = l 
-f.right = m 
-h.right = n
-h.left = o 
-j.left = p 
-j.right = q 
-m.left = r 
-m.right = s 
-
-
+d.left = f
+d.right = g 
+e.left  = h 
+e.right = i 
+f.left = j 
+f.right = k 
+g.left = l 
+g.right = m 
+h.left = n 
+h.right = o 
+i.left = p 
+i.right = q
+p.left = r 
+p.right = s
 
 
 def tree_algebra(root):
