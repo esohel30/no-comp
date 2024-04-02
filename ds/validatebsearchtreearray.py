@@ -17,3 +17,5 @@ def helper(nums, i, left, right):
     return False 
     
 print(validate(arr))
+
+
